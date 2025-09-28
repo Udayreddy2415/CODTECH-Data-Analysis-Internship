@@ -1,3 +1,4 @@
+
 """
 Big Data Scalability Demo (Advanced)
 File: big_data_scalability_demo.py
@@ -113,3 +114,4 @@ def benchmark(size: int, backend: str):
 # The code below is modified to directly call the benchmark function
 # instead of using argparse, which causes issues in Colab.
 benchmark(size=1_000_000, backend="pyspark") # You can change the backend and size here
+
