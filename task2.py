@@ -101,3 +101,4 @@ for name, model in models.items():
     RocCurveDisplay.from_predictions(y_test, y_proba)
     plt.title(f"ROC Curve - {name}")
     plt.show()
+    
