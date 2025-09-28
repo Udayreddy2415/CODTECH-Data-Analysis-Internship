@@ -110,10 +110,6 @@ def benchmark(size: int, backend: str):
 
 
 # ---------------- MAIN ---------------- #
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--backend", type=str, choices=["pyspark", "dask"], default="pyspark")
-    parser.add_argument("--size", type=int, default=1_000_000, help="Number of rows in synthetic dataset")
-    args = parser.parse_args()
-
-    benchmark(size=args.size, backend=args.backend)
+# The code below is modified to directly call the benchmark function
+# instead of using argparse, which causes issues in Colab.
+benchmark(size=1_000_000, backend="pyspark") # You can change the backend and size here
